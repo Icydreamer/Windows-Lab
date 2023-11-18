@@ -25,13 +25,12 @@ namespace exp3
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
             string strText1 = textBox1.Text.Trim();
-            bool isEmpty = (strText1 == String.Empty);
-            if (isEmpty)
+            int x = int.Parse(strText1);
+            if (x < 0)
             {
-                textBox11.Text = String.Concat("输入不能为空！");
+                textBox1.Text = "输入不能为负数";
                 return;
             }
-            int x = int.Parse(strText1);
             int ret = DLLImport.Fac(x);
             textBox11.Text = ret.ToString();
         }
@@ -106,7 +105,7 @@ namespace exp3
             if (dycomType != null)
             {
                 dynamic dycomObject = Activator.CreateInstance(dycomType);
-                ret = dycomObject.Minus(numbers[0], numbers[1]);
+                ret = dycomObject.Divide(numbers[0], numbers[1]);
                 textBox44.Text = String.Concat(ret);
             }
         }
