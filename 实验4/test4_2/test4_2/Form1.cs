@@ -2,7 +2,7 @@ namespace test4_2
 {
     public partial class Form1 : Form
     {
-        private string guid = "1FEE64A5-F6FA-4CCE-B87D-FB4AFED41032";
+        private string guid = "C03BE966-41B5-4778-B45C-01C340249442";
         public Form1()
         {
             InitializeComponent();

@@ -98,5 +98,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\COM\COM.csproj">
+      <Project>{01d3a620-41d4-4cec-8e60-1bbf2de614f4}</Project>
+      <Name>COM</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <ItemGroup>
+    <COMReference Include="{4C7492D4-9265-4748-83DB-3DCDFA9AC273}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>4C7492D4-9265-4748-83DB-3DCDFA9AC273</Guid>
+    </COMReference>
+  </ItemGroup>
 </Project>

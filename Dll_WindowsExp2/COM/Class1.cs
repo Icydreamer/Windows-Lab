@@ -1,25 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-using System.Runtime.InteropServices;
-
-namespace test_4
+namespace COM
 {
     [ComVisible(true)]
-    [Guid("72784B9F-6C5D-4AE1-B35E-285CFED4C164")]
+    [Guid("C5753F46-558C-4A7E-AD92-98CBA76A5D74")]
     public interface IExpress
     {
         string Minus(int a, int b);//返回值形如“9 = 23 - 14”
         string Divide(int a, int b);//若b为零，则返回“除零错误”；若b不为0，则返回整除表达式，形如“4 = 33 / 8”
     }
     [ComVisible(true)]
-    [Guid("C03BE966-41B5-4778-B45C-01C340249442")]
-    [ProgId("test_4.MyClass")]
-
-    public class Class1: IExpress
+    [Guid("4C7492D4-9265-4748-83DB-3DCDFA9AC273")]
+    [ProgId("MyCom")]
+    public class Class1 : IExpress
     {
         public string Minus(int a, int b)
         {
@@ -31,8 +29,7 @@ namespace test_4
             if (b == 0)
                 return "除零错误";
             else
-                return a/b + " = " + a + " / " + b;
+                return a / b + " = " + a + " / " + b;
         }
     }
 }
-

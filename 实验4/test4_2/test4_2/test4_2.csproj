@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <COMReference Include="{4fb2d46f-efc8-4643-bcd0-6e5bfa6a174c}">
+    <COMReference Include="{C03BE966-41B5-4778-B45C-01C340249442}">
       <WrapperTool>tlbimp</WrapperTool>
       <VersionMinor>4</VersionMinor>
       <VersionMajor>2</VersionMajor>
-      <Guid>4fb2d46f-efc8-4643-bcd0-6e5bfa6a174c</Guid>
+      <Guid>C03BE966-41B5-4778-B45C-01C340249442</Guid>
     </COMReference>
   </ItemGroup>
 

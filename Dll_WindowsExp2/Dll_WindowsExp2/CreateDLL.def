@@ -5,3 +5,5 @@ EXPORTS
 plus3 @ 1
 mul2 @ 2
 unionString @ 3
+Fac @ 4
+subtract @ 5
